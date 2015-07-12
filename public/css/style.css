@@ -1,0 +1,36 @@
+.navbar .btn {
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    border-radius: 0 !important;
+}
+
+a.navbar-brand.brand-title, .navbar-brand.brand-title {
+    color: #fff;
+    background-color: darkorange;
+    height: auto;
+    font-size: 2em;
+    padding: 11px;
+}
+
+a.navbar-brand.brand-title:hover, .navbar-brand.brand-title:hover{
+    background-color: red;
+}
+
+
+/* Table */
+.tbl-col-sm-action{
+    width: 10%;
+}
+
+.actoin-inline{
+    display:inline;
+}
+/* to fix form width, i have add below line of code */
+.actoin-inline form{
+    display: inline-block;
+}
+
+.remove-btn-style{
+    border: none;
+    background: none;
+}
