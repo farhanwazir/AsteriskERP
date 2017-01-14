@@ -1,7 +1,5 @@
-@extends('main')
+@extends('main', ['page_title' => 'About Company', 'heading' => 'Company Profile', 'slogan' => 'We love to serve'])
 
-<?php $page_title = 'About Company'; ?>
-@include('asterisk.includes.header')
 @section('contents')
     <div class="container">
         <h2>About Company</h2>
@@ -10,3 +8,4 @@
         </article>
     </div>
 @endsection
+
