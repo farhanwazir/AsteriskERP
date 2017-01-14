@@ -1,5 +1,12 @@
-@if (isset($__env->getSections()['footer']))
-    <section id="footer_container" class="footer">
+<footer class="main-footer">
+    @if (isset($__env->getSections()['footer']))
         @yield('footer')
-    </section>
-@endif
+    @else
+        <div class="pull-right hidden-xs">
+            {!! trans('common.version') !!}
+        </div>
+        {!! trans('common.copyrights') !!}
+    @endif
+</footer>
+
+

@@ -1,32 +1,14 @@
-@extends('main')
-@include('asterisk.includes.header')
+@extends('main', ['page_title' => trans('MenuManager::module.name'), 'heading' => trans('MenuManager::module.name'), 'slogan' => trans('MenuManager::module.version')])
 
 @section('contents')
     <div class="container">
-        <h2>Create Menu</h2>
+        <h2>{!! trans('MenuManager::common.main.headings.edit') !!}</h2>
         {!! Form::model($menu, ['method'=>'PATCH', 'action' => ['\Asterisk\Modules\MenuManager\Controllers\MenuManagerController@update', $menu->id]]) !!}
-        @include('asterisk.includes.errors')
-        <div class="row">
-            <div class="col-sm-6">
-                <div class="form-group">
-                    {!! Form::label('title', 'Title') !!}
-                    {!! Form::text('title', null, ['class' => 'form-control']) !!}
-                </div>
-            </div>
-            <div class="col-sm-6">
-                <div class="form-group">
-                    {!! Form::label('slug', 'Slug') !!}
-                    {!! Form::text('slug', null, ['class' => 'form-control']) !!}
-                </div>
-            </div>
-        </div>
-        <div class="form-group">
-            {!! Form::label('description', 'Description') !!}
-            {!! Form::textarea('description', null, ['class' => 'form-control']) !!}
-        </div>
+
+        @include('MenuManager::includes.menu_form')
 
         <div class="col-sm-1">
-            {!! Form::submit('Save', ['class' => 'btn btn-primary form-control']) !!}
+            {!! Form::submit('Update', ['class' => 'btn btn-primary form-control']) !!}
         </div>
         {!! form::close() !!}
     </div>
