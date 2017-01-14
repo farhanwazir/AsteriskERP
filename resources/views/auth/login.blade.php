@@ -1,5 +1,5 @@
-@extends('main')
-<?php $page_title = 'User Login'; ?>
+@extends('main', ['page_title' => 'User Login', 'heading' => 'System Authentication'])
+
 @section('contents')
 
     <div class="content row">

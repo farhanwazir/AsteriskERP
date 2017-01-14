@@ -11,9 +11,14 @@
     @if(isset($body))
 
         @foreach($body as $row)
-
+            <?php
+            $row_class = (array_key_exists('aerp_data_row_class', $row)? 'class='. $row['aerp_data_row_class'] : '');
+            $row_data_attr = ' ';
+            if(array_key_exists('aerp_data_row_data', $row))
+                foreach($row['aerp_data_row_data'] as $attr_name => $attr_val) $row_data_attr .= $attr_name .'='. $attr_val ;
+            ?>
             @if(isset($header))
-                <tr>
+                <tr {{ $row_class }} {{ $row_data_attr }}>
                     @foreach($header as $name => $title)
                         <td>{!! (getType($row) == 'object')? $row->$name : $row[$name] !!}</td>
                     @endforeach

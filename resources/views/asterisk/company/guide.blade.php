@@ -2,7 +2,7 @@
 
 <?php $page_title = '** User Guide **'; ?>
 
-@include('asterisk.includes.header')
+
 
 @section('contents')
     <div class="container">

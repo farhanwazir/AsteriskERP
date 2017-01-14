@@ -1,13 +1,14 @@
 <head>
     <title>{{ $page_title }}</title>
 
-    @include('ideator.partials.metadata')
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+
+    @yield('meta_tags')
 
 
-    {!! HTML::style('css/bootstrap.min.css') !!}
-    {!! HTML::style('css/style.css') !!}
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    {!! HTML::script('js/bootstrap.min.js') !!}
-    {!! HTML::script('js/general.js') !!}
+    @yield('header_attachments')
 
 </head>

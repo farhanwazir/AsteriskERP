@@ -1,0 +1,232 @@
+.navbar .btn {
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    border-radius: 0 !important;
+}
+
+a.navbar-brand.brand-title, .navbar-brand.brand-title {
+    color: #fff;
+    background-color: darkorange;
+    height: auto;
+    font-size: 2em;
+    padding: 11px;
+}
+
+a.navbar-brand.brand-title:hover, .navbar-brand.brand-title:hover{
+    background-color: red;
+}
+
+
+
+/*  Left Menu   */
+#aerp-left-menu a{
+    display: block;
+    color:#fff;
+    outline: none;
+}
+#aerp-left-menu a:hover{
+    text-decoration: none;
+}
+#aerp-left-menu .nav a{
+    color:#333;
+}
+#aerp-left-menu .panel{
+    background: none;
+    border: none;
+    border-radius: 0;
+}
+#aerp-left-menu .panel-default > .panel-heading{
+    background: #444;
+}
+#aerp-left-menu .panel-default > .panel-heading.active-panel{
+    background: #222;
+}
+#aerp-left-menu .panel-heading{
+    padding: 0;
+}
+#aerp-left-menu .panel-heading a{
+    padding: 10px 15px;
+}
+#aerp-left-menu .nav-pills > li > a{
+    border-radius: 0;
+}
+#aerp-left-menu .nav-pills > li > a.active{
+    background: #fff;
+}
+#aerp-left-menu .panel-collapse{
+    background-color: #f7f7f7;
+}
+
+/* Table */
+.tbl-col-sm-action{
+    width: 10%;
+}
+
+.actoin-inline{
+    display:inline;
+}
+/* to fix form width, i have add below line of code */
+.actoin-inline form{
+    display: inline-block;
+}
+
+.remove-btn-style{
+    border: none;
+    background: none;
+}
+
+.aerp_clickable_row{
+    cursor: pointer;
+}
+
+/* Dividers and Spacers */
+
+.spacer{
+    margin : 10px 0;
+}
+
+.spacer-right{
+    margin-right: 10px;
+}
+
+.contents{
+    min-height: 100%;
+}
+
+.big-input input, .big-input button{
+    height: 42px;
+}
+
+
+
+/************ TYPEAHEAD ****************/
+.suggestion-search{
+    max-width:346px;
+}
+.suggestion-search .typeahead{
+    min-width:300px;
+}
+.suggestion-search .btn{
+    margin-top:-0.45rem;
+}
+.tt-menu{
+    background-color: #fff;
+    border: 1px solid #999;
+    padding:5px;
+    box-shadow: 5px 5px 5px #ccc;
+}
+.tt-cursor{
+    background-color: #0000C2;
+    color:#fff;
+}
+.tt-query {
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+
+.tt-hint {
+    color: #999
+}
+
+.tt-dropdown-menu {
+    width: 422px;
+    margin-top: 12px;
+    padding: 8px 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    -webkit-box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    -moz-box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+}
+
+.tt-suggestion {
+    padding: 3px 20px;
+    line-height: 24px;
+}
+
+.tt-suggestion.tt-cursor, .tt-suggestion:hover {
+    color: #fff;
+    background-color: #0097cf;
+    cursor: pointer;
+}
+
+.tt-suggestion p, .tt-suggestion div {
+    margin: 0;
+}
+.tt-suggestion .new-line{
+    display: block;
+}
+.tt-highlight{
+    color:red;
+}
+.tt-footer{
+    background-color:#f7f7f7;
+    text-align:center;
+    padding:5px;
+}
+.suggestion-row{
+    display:flex;
+}
+.suggestion-row .left-container, .suggestion-row .right-container{
+    margin: 0;
+}
+.suggestion-row .left-container{
+    padding-right:5px;
+}
+.suggestion-row .right-container{
+    line-height: 16px;
+    flex: 1;
+}
+.suggestion-list-thumb{
+    max-width: 50px;
+    vertical-align: middle;
+    text-align: left;
+}
+
+.grid-col{
+    padding: 10px 5px;
+    margin: 1px;
+    background-color: #fcfcfc;
+    border: 1px solid #ccc;
+}
+
+.messages-container{
+    margin:10px auto;
+    width: 90%;
+}
+
+.col-as-box-simple{
+    border-left: 1px solid #ccc;
+    background: #f9f9f9;
+    padding: 5px;
+}
+
+.profile-heading-fix-margin{
+    margin-top: 0;
+}
+
+.vspacer-small{
+    height: 3px;
+}
+
+.fly-right-down{
+    position: absolute;
+    bottom: 0;
+    right: -5px;
+}
+
+.fileinput{
+    position: relative;
+}
+
+.right-padding-10{
+    padding-right: 10px;
+}
+.left-padding-10{
+    padding-left: 10px;
+}

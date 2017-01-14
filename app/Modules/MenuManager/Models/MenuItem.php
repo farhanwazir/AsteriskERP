@@ -11,6 +11,7 @@ class MenuItem extends Model{
     protected $fillable = [
         'title',
         'description',
+        'icon_class',
         'method',
         'action',
         'menu_id'
@@ -18,5 +19,22 @@ class MenuItem extends Model{
 
     function menu(){
         return $this->belongsTo('Asterisk\Modules\MenuManager\Models\MenuManager', 'id', 'menu_id');
+    }
+
+    function scopeParents($query){
+        return $query->where('child_of', 0);
+    }
+
+    function scopeChildern($query){
+        return $query->where('child_of', '>', 0);
+    }
+
+    public function getListTitleAttribute(){
+        $icon = empty($this->attributes['icon_class']) ? 'mf icon-arrow-bl-r-o' : $this->attributes['icon_class'];
+        return '<i class="'. $icon .'"> </i> <span>'. $this->attributes['title'] .'</span>';
+    }
+
+    public function getTableName(){
+        return $this->getTable();
     }
 }
